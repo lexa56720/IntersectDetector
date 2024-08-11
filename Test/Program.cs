@@ -25,7 +25,7 @@ namespace Test
                 Start = GetVector(1, 2),
                 End = GetVector(1, 2)
             };
-            var intersectPoint = IntersectDetection.IsSegmentsIntersect(a, b);
+            var intersectPoint = IntersectDetection.GetIntersectionPoint(a, b);
 
             if (intersectPoint is null)
             {

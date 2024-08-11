@@ -12,7 +12,7 @@ namespace IntersectDetector.Algorithms
     //The shortest line between two lines in 3D algorithm
     public static class IntersectDetection
     {
-        public static Vector3D? IsSegmentsIntersect(Segment3D a, Segment3D b)
+        public static Vector3D? GetIntersectionPoint(Segment3D a, Segment3D b)
         {
             (Vector3D resultA, Vector3D resultB)? result =
                 GetMinimalLineBetweenSegments(a.Start, a.End, b.Start, b.End);
@@ -64,9 +64,9 @@ namespace IntersectDetector.Algorithms
 
             var resultB = new Vector3D()
             {
-                X = (float)(p3.X + mub * p43.X),
-                Y = (float)(p3.Y + mub * p43.Y),
-                Z = (float)(p3.Z + mub * p43.Z),
+                X = (p3.X + mub * p43.X),
+                Y = (p3.Y + mub * p43.Y),
+                Z = (p3.Z + mub * p43.Z),
             };
 
             return (resultA, resultB);

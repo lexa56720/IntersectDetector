@@ -14,7 +14,7 @@ namespace IntersectDetector.Types
 
         public override string ToString()
         {
-            return $"({Start}) - ({End})";
+            return $"({Start}) -> ({End})";
         }
     }
 }

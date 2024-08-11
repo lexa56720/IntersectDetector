@@ -45,7 +45,6 @@ namespace IntersectDetector.Types
             set => values[i] = value;
         }
 
-
         public static Vector3D operator -(Vector3D vector)
         {
             var result = new Vector3D(vector);
